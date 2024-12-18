@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'TheSeasons';
+    src: url("Demo_Fonts/Fontspring-DEMO-theseasons-bd.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url("C:/testing_dt/futura/Futura Other Fonts/FuturaOrtoLt-Light.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #9abbf3;
+}
+
+/* Logo Styling */
+.logo {
+    font-family: 'TheSeasons';
+    font-size: 3rem;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(28, 39, 48, 0.5);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    transition: color 0.3s ease, -webkit-text-stroke-color 0.3s ease;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit; /* Logo color will inherit from .logo */
+}
+
+/* Dark Mode Styling for Light Backgrounds */
+.navbar.dark-mode {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar.dark-mode .nav-links a,
+.navbar.dark-mode .logo-link {
+    color: #333; /* Dark color for text */
+}
+
+.navbar.dark-mode .logo {
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Page Section Styling */
+ .about, .services, .contact, .support, .contribute {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+  
+    font-family: 'TheSeasons';
+    color: white;
+    text-align: left;
+    padding-left: 8%;
+    padding-top: 34%;
+}
+
+.content p {
+    font-size: 35px;
+    letter-spacing: 2.5px;
+}
+
+.about {
+    background-image: url("web2.png");
+}
+
+.services {
+    background-image: url("web4.png");
+}
+
+.contact {
+    background-image: url("web5.png");
+}
+
+.support {
+    background-image: url("support.png");
+}
+
+.contribute {
+    background-image: url("contribute.png");
+}
+
+/* Button Styling for Each Section */
+.section-button {
+  background-color: #9abbf3; /* Light blue background */
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section-button:hover {
+  background-color: #7a99d4; /* Darker blue on hover */
+}
+
+/* Position buttons differently on each section */
+#about-button {
+  position: relative;
+  top: 92%;
+  left: 54%;
+  padding: 12px 30px;
+  background-color: black; /* Button background color */
+  color: white; /* Text color */
+  font-size: 20px; /* Text size */
+  font-weight: bold;
+  border: none;
+  border-radius: 60px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and scaling */
+}
+
+/* Hover Effect */
+#about-button:hover {
+  background-color: rgb(219, 96, 96); /* Change background color on hover */
+  color: black; /* Change text color on hover */
+  transform: scale(1.1); /* Slightly increase size for animation */
+}
+
+
+
+#services-button {
+  position: relative;
+  top: 88%;
+  left: 9%;
+  padding: 12px 30px;
+  background-color: rgb(119, 119, 119); /* Button background color */
+  color: rgb(0, 0, 0); /* Text color */
+  font-size: 18px; /* Text size */
+  font-weight: bold;
+  border: none;
+  border-radius: 60px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and scaling */
+}
+
+/* Hover Effect */
+#services-button:hover {
+  background-color: #727476; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+  transform: scale(1.1); /* Slightly increase size for animation */
+}
+
+
+
+
+#contact-button {
+  position: relative;
+  top: 92%;
+  left: 59%;
+  padding: 12px 30px;
+  background-color: black; /* Button background color */
+  color: white; /* Text color */
+  font-size: 25px; /* Text size */
+  font-weight: bold;
+  border: none;
+  border-radius: 60px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and scaling */
+}
+
+/* Hover Effect */
+#contact-button:hover {
+  background-color: #72757b; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+  transform: scale(1.1); /* Slightly increase size for animation */
+}
+
+
+
+#support-button {
+  
+  position: relative;
+  top: 43%;
+  left: 60%;
+  padding: 16px 40px; /* Increased padding to make the button larger */
+  background-color: rgb(96, 96, 96); /* Button background color */
+  color: rgb(0, 0, 0); /* Text color */
+  font-size: 30px; /* Increased font size for better visibility */
+  font-weight: bold;
+  border: none;
+  border-radius: 60px; /* Rounded corners for a smoother appearance */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease; /* Smooth transition for background, scaling, and font size */
+}
+
+/* Hover Effect */
+#support-button:hover {
+  background-color: #767676; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+  transform: scale(1.1); /* Slightly increase size for animation */
+  font-size: 22px; /* Increase font size on hover for more emphasis */
+}
+
+
+#contribute-button {
+  position: relative;
+  top: 91%;
+  left: 59%;
+  padding: 16px 40px; /* Increased padding for larger button */
+  background-color: #515F87; /* Button background color */
+  color: white; /* Text color */
+  font-size: 20px; /* Font size for the button text */
+  font-weight: bold;
+  border: none;
+  border-radius: 60px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease; /* Smooth transitions for background, scaling, and font size */
+}
+
+/* Hover Effect */
+#contribute-button:hover {
+  background-color: #515F87; /* Change background color on hover */
+  color: black; /* Change text color to black */
+  transform: scale(1.1); /* Slightly increase size for animation */
+  font-size: 22px; /* Increase font size during hover */
+}
